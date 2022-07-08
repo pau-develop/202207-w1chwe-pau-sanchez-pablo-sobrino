@@ -1,4 +1,5 @@
 @import "../sass/_colors/_colors.scss";
+@import "../sass/_mixins/_mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -7,4 +8,11 @@
 body {
   margin: 0;
   background-color: $background-color;
+}
+
+.header {
+  @include sectioned-boxes(100px);
+  .header__inner {
+    @include sectioned-boxes-inner();
+  }
 }
