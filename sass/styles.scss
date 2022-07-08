@@ -1,8 +1,10 @@
+@use "../sass/_colors/_colors.scss";
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: $background-color;
 }
