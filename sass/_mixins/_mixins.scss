@@ -21,20 +21,20 @@
   justify-content: $justify-content;
 }
 
-@mixin input-box($border, $box-background-color, $height) {
+@mixin input-box($border, $box-background-color, $height, $width) {
   border-radius: 20px;
   background-color: $box-background-color;
   border: $border;
   height: $height;
-  width: 100%;
+  width: $width;
 }
 
-@mixin submit-button($height) {
+@mixin submit-button($height, $width) {
   background-color: $pink-button;
   color: $background-color;
   font-size: 14px;
   border: none;
   border-radius: 20px;
-  width: 100%;
+  width: $width;
   height: $height;
 }
