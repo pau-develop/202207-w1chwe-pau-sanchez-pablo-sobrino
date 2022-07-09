@@ -60,8 +60,11 @@ body {
     color: $background-color;
     font-size: medium;
   }
+  .section-media__input-button {
+    @include submit-button(50%);
+  }
 }
 
 .section-media__field-to-complete {
-  @include input-box($background-color, none, 30%);
+  @include input-box(none, $background-color);
 }
