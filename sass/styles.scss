@@ -12,7 +12,8 @@ body {
   font-family: sans-serif;
 }
 .section-top {
-  @include sectioned-boxes(320px);
+  @include sectioned-boxes(400px);
+  margin-top: 5%;
   &__inner {
     @include sectioned-boxes-inner(column, $background-color, start);
     .section-top__form {
