@@ -9,6 +9,7 @@
 @mixin sectioned-boxes-inner($flex-direction, $background-palette) {
   background-color: $background-palette;
   width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;

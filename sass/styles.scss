@@ -29,6 +29,17 @@ body {
   }
 }
 
+.section-top {
+  @include sectioned-boxes(320px);
+  .section-top__inner {
+    @include sectioned-boxes-inner(column, $background-color);
+    .section-top__form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
 .section-media {
   @include sectioned-boxes(100%);
   .section-media__inner {
