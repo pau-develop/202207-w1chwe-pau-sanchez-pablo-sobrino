@@ -27,3 +27,13 @@
   background-color: $background-color;
   border: $border;
 }
+
+@mixin submit-button($height) {
+  background-color: $pink-button;
+  color: $background-color;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: $height;
+}
