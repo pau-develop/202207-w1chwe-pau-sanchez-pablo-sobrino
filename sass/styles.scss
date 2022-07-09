@@ -1,5 +1,6 @@
 @import "../sass/_colors/_colors.scss";
 @import "../sass/_mixins/_mixins.scss";
+@import "../sass/_partials/_headers.scss";
 
 * {
   box-sizing: border-box;
@@ -10,29 +11,9 @@ body {
   background-color: $background-color;
   font-family: sans-serif;
 }
-
-.header {
-  @include sectioned-boxes(80px);
-  .header__inner {
-    @include sectioned-boxes-inner(row, $background-color, space-between);
-    align-items: center;
-  }
-  .header__h1 {
-    color: $title-text-color;
-    margin: 0;
-    font-size: 35px;
-    font-weight: 800;
-  }
-  .fa-solid {
-    color: $title-text-color;
-    align-items: center;
-    display: flex;
-  }
-}
-
 .section-top {
   @include sectioned-boxes(320px);
-  .section-top__inner {
+  &__inner {
     @include sectioned-boxes-inner(column, $background-color, start);
     .section-top__form {
       @include sectioned-boxes-inner(column, $background-color, space-around);
