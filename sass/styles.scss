@@ -26,6 +26,9 @@ body {
         border-radius: 20px;
       }
     }
+    .section-top__submit-button {
+      @include submit-button(20%);
+    }
   }
 }
 
