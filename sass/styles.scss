@@ -44,23 +44,22 @@ body {
   &__form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   &__option-field {
     display: flex;
     flex-direction: column;
     color: $background-color;
-    align-items: center;
-    margin: 2%;
+    align-items: left;
+    margin: 0 2%;
     height: 20%;
   }
-<<<<<<< HEAD
-  &__input-button {
-    @include submit-button(50%);
+  .section-media__input-button {
+    @include submit-button(20%);
   }
-=======
-
   &__tittle {
     margin-left: 30px;
     color: $background-color;
@@ -72,10 +71,5 @@ body {
 }
 
 .section-media__field-to-complete {
-<<<<<<< HEAD
-  @include input-box($background-color, none, 30%);
->>>>>>> e9537e62044a32996a07c9ebf2a0a67346e3b4d3
-=======
-  @include input-box(none, $background-color);
->>>>>>> 63d24438748bb4bc1e8f6250f523a5b6beba8046
+  @include input-box(none, $background-color, 50%);
 }
