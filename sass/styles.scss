@@ -15,4 +15,9 @@ body {
   .header__inner {
     @include sectioned-boxes-inner();
   }
+  .header__h1 {
+    color: $header-text-color;
+    margin: 0;
+    font-size: 40px;
+  }
 }
