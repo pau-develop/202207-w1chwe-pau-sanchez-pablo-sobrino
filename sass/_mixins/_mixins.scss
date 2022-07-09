@@ -15,3 +15,10 @@
   flex-direction: $flex-direction;
   justify-content: space-between;
 }
+
+@mixin input-box($margin, $border) {
+  border-radius: 20px;
+  $marging: $margin;
+  background-color: $background-color;
+  border: $border;
+}

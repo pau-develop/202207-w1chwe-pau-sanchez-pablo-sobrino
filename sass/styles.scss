@@ -34,4 +34,10 @@ body {
   .section-media__inner {
     @include sectioned-boxes-inner(column, $dark-blue);
   }
+  .section-media__option-field {
+    display: flex;
+    flex-direction: column;
+    color: $background-color;
+    align-items: center;
+  }
 }
