@@ -1,0 +1,43 @@
+@import "../_mixins/_mixins.scss";
+@import "../_colors/_colors.scss";
+
+.section-media {
+  @include sectioned-boxes(100%);
+  .section-media__inner {
+    @include sectioned-boxes-inner(column, $dark-blue, space-between);
+  }
+  &__search-box {
+    height: 500px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  &__option-field {
+    display: flex;
+    flex-direction: column;
+    color: $background-color;
+    align-items: left;
+    margin: 0 2%;
+    height: 20%;
+  }
+  .section-media__input-button {
+    @include submit-button(20%);
+  }
+  &__tittle {
+    margin-left: 30px;
+    color: $background-color;
+    font-size: medium;
+  }
+  &__input-button {
+    @include submit-button(50%);
+  }
+}
+
+.section-media__field-to-complete {
+  @include input-box(none, $background-color, 50%);
+}
