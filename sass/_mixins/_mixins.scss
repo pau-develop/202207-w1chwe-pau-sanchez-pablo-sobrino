@@ -6,14 +6,19 @@
   display: flex;
   align-items: center;
 }
-@mixin sectioned-boxes-inner($flex-direction, $background-palette) {
+@mixin sectioned-boxes-inner(
+  $flex-direction,
+  $background-palette,
+  $justify-content
+) {
   background-color: $background-palette;
   width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
   flex-direction: $flex-direction;
-  justify-content: space-between;
+  justify-content: $justify-content;
 }
 
 @mixin input-box($margin, $border) {

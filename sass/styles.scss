@@ -14,7 +14,7 @@ body {
 .header {
   @include sectioned-boxes(80px);
   .header__inner {
-    @include sectioned-boxes-inner(row, $background-color);
+    @include sectioned-boxes-inner(row, $background-color, space-between);
   }
   .header__h1 {
     color: $title-text-color;
@@ -29,10 +29,28 @@ body {
   }
 }
 
+.section-top {
+  @include sectioned-boxes(320px);
+  .section-top__inner {
+    @include sectioned-boxes-inner(column, $background-color, start);
+    .section-top__form {
+      @include sectioned-boxes-inner(column, $background-color, space-around);
+      width: 90%;
+      align-items: center;
+      input {
+        width: 100%;
+        height: 20%;
+        border: 2px solid $text-black;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
 .section-media {
   @include sectioned-boxes(100%);
   .section-media__inner {
-    @include sectioned-boxes-inner(column, $dark-blue);
+    @include sectioned-boxes-inner(column, $dark-blue, space-between);
   }
   .section-media__option-field {
     display: flex;
