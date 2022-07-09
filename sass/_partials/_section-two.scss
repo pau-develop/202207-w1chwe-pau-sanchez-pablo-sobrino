@@ -39,5 +39,5 @@
 }
 
 .section-media__field-to-complete {
-  @include input-box(none, $background-color, 50%);
+  @include input-box(none, $background-color, 50%, 100%);
 }
