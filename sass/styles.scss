@@ -60,7 +60,7 @@ body {
     color: $background-color;
     font-size: medium;
   }
-  .section-media__input-button {
+  &__input-button {
     @include submit-button(50%);
   }
 }
