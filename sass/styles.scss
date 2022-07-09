@@ -17,13 +17,13 @@ body {
     @include sectioned-boxes-inner();
   }
   .header__h1 {
-    color: $header-text-color;
+    color: $title-text-color;
     margin: 0;
     font-size: 35px;
     font-weight: 800;
   }
   .fa-solid {
-    color: $header-text-color;
+    color: $title-text-color;
     align-items: center;
     display: flex;
   }
