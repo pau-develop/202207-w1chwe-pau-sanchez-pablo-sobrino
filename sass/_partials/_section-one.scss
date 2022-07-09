@@ -3,9 +3,10 @@
 
 .section-top {
   @include sectioned-boxes(400px);
-  margin-top: 5%;
   &__inner {
     @include sectioned-boxes-inner(column, $background-color, start);
+    padding-top: 5%;
+    padding-bottom: 5%;
     .section-top__form {
       @include sectioned-boxes-inner(column, $background-color, space-around);
       width: 90%;
@@ -19,6 +20,24 @@
     }
     .section-top__submit-button {
       @include submit-button(20%);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-top {
+    .section-top__form {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      width: 100%;
+      input {
+        width: 100%;
+        height: 20%;
+        border: 2px solid $text-black;
+        border-radius: 20px;
+        margin: 0 2%;
+      }
     }
   }
 }
