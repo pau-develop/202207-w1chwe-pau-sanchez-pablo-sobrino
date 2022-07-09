@@ -43,4 +43,7 @@ body {
     color: $background-color;
     align-items: center;
   }
+  &__input-button {
+    @include submit-button(50%);
+  }
 }
