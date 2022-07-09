@@ -34,10 +34,31 @@ body {
   .section-media__inner {
     @include sectioned-boxes-inner(column, $dark-blue, space-between);
   }
-  .section-media__option-field {
+  &__search-box {
+    height: 500px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  &__option-field {
     display: flex;
     flex-direction: column;
     color: $background-color;
     align-items: center;
+    margin: 2%;
+    height: 20%;
   }
+
+  &__tittle {
+    margin-left: 30px;
+    color: $background-color;
+    font-size: medium;
+  }
+}
+
+.section-media__field-to-complete {
+  @include input-box($background-color, none, 30%);
 }
