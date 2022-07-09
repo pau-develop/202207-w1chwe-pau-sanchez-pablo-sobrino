@@ -6,11 +6,12 @@
   display: flex;
   align-items: center;
 }
-@mixin sectioned-boxes-inner() {
-  background-color: $background-color;
+@mixin sectioned-boxes-inner($flex-direction, $background-palette) {
+  background-color: $background-palette;
   width: 100%;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
+  flex-direction: $flex-direction;
   justify-content: space-between;
 }
