@@ -1,6 +1,8 @@
 @import "../sass/_colors/_colors.scss";
 @import "../sass/_mixins/_mixins.scss";
 @import "../sass/_partials/_headers.scss";
+@import "../sass/_partials/_section-one.scss";
+@import "../sass/_partials/_section-two.scss";
 
 * {
   box-sizing: border-box;
@@ -10,66 +12,4 @@ body {
   margin: 0;
   background-color: $background-color;
   font-family: sans-serif;
-}
-.section-top {
-  @include sectioned-boxes(400px);
-  margin-top: 5%;
-  &__inner {
-    @include sectioned-boxes-inner(column, $background-color, start);
-    .section-top__form {
-      @include sectioned-boxes-inner(column, $background-color, space-around);
-      width: 90%;
-      align-items: center;
-      input {
-        width: 100%;
-        height: 20%;
-        border: 2px solid $text-black;
-        border-radius: 20px;
-      }
-    }
-    .section-top__submit-button {
-      @include submit-button(20%);
-    }
-  }
-}
-
-.section-media {
-  @include sectioned-boxes(100%);
-  .section-media__inner {
-    @include sectioned-boxes-inner(column, $dark-blue, space-between);
-  }
-  &__search-box {
-    height: 500px;
-  }
-  &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 80%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  &__option-field {
-    display: flex;
-    flex-direction: column;
-    color: $background-color;
-    align-items: left;
-    margin: 0 2%;
-    height: 20%;
-  }
-  .section-media__input-button {
-    @include submit-button(20%);
-  }
-  &__tittle {
-    margin-left: 30px;
-    color: $background-color;
-    font-size: medium;
-  }
-  &__input-button {
-    @include submit-button(50%);
-  }
-}
-
-.section-media__field-to-complete {
-  @include input-box(none, $background-color, 50%);
 }
