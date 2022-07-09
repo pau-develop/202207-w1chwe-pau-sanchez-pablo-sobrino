@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  @include sectioned-boxes(100px);
+  @include sectioned-boxes(80px);
   .header__inner {
     @include sectioned-boxes-inner();
   }
