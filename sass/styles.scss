@@ -20,4 +20,9 @@ body {
     margin: 0;
     font-size: 40px;
   }
+  .fa-solid {
+    color: $header-text-color;
+    align-items: center;
+    display: flex;
+  }
 }
