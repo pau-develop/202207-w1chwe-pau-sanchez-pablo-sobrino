@@ -26,6 +26,10 @@
 
 @media (min-width: 1000px) {
   .section-top {
+    @include sectioned-boxes(200px);
+    &__inner {
+      padding: 0;
+    }
     .section-top__form {
       flex-direction: row;
       justify-content: space-between;
