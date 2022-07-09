@@ -13,6 +13,7 @@ body {
 }
 .section-top {
   @include sectioned-boxes(400px);
+  margin-top: 5%;
   &__inner {
     @include sectioned-boxes-inner(column, $background-color, start);
     .section-top__form {
