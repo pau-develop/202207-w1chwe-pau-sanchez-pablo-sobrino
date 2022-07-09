@@ -1,11 +1,14 @@
 @import "../_colors/_colors.scss";
 
 @mixin sectioned-boxes($height) {
-  border-bottom: 2px solid $border-grey;
+  border-bottom: 1px solid $border-section-violet;
   height: $height;
+  display: flex;
+  align-items: center;
 }
 @mixin sectioned-boxes-inner() {
   background-color: $background-color;
+  width: 100%;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
