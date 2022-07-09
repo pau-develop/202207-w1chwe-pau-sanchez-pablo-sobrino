@@ -3,9 +3,10 @@
 
 .section-top {
   @include sectioned-boxes(400px);
-  margin-top: 5%;
   &__inner {
     @include sectioned-boxes-inner(column, $background-color, start);
+    padding-top: 5%;
+    padding-bottom: 5%;
     .section-top__form {
       @include sectioned-boxes-inner(column, $background-color, space-around);
       width: 90%;
