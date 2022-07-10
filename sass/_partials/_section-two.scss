@@ -1,10 +1,11 @@
 .section-media {
   @include sectioned-boxes(100%);
   .section-media__inner {
-    @include sectioned-boxes-inner(column, $dark-blue, space-between);
+    @include sectioned-boxes-inner(column, $background-color, space-between);
   }
   &__search-box {
     height: 500px;
+    background-color: $dark-blue;
   }
   &__form {
     display: flex;

@@ -1,0 +1,5 @@
+@import "../_mixins/_mixins.scss";
+
+.First-research__button-booking {
+  @mixin submit-button(3rem, 5rem);
+}
