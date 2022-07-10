@@ -4,30 +4,50 @@
     @include sectioned-boxes-inner(column, $background-color, space-around);
   }
   &__green-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $green-box-background;
     border: 2px solid $green-box-border;
     border-radius: 20px;
     color: $green-box-border;
+    i {
+      align-self: start;
+    }
+    .fa-x {
+      align-self: center;
+    }
   }
   &__red-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $red-box-background;
     border: 2px solid $red-box-border;
     border-radius: 20px;
     color: $red-box-border;
+    i {
+      align-self: start;
+    }
+    .fa-x {
+      align-self: center;
+    }
   }
   &__blue-box {
+    height: 50%;
     background-color: $blue-box-background;
     color: $background-color;
     font-size: 3rem;
     text-align: center;
-    padding: 10% 0;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   &__button {
     @include submit-button(60px, 80%, transparent);
     border: 2px solid white;
+    border-radius: 40px;
   }
 }
