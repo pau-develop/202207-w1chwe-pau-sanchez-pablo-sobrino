@@ -1,21 +1,17 @@
 .section-fourth {
-  @include sectioned-boxes-inner(column, $background-color, space-between);
-  text-align: center;
-  font-size: 14px;
+  @include sectioned-boxes(500px);
+  &__inner {
+    @include sectioned-boxes-inner(column, $background-color, space-around);
+  }
   @media (min-width: 1000px) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  & ul {
-    padding: 0;
-  }
-  & li {
-    list-style: none;
-    padding-top: 22px;
+    &__inner {
+      @include sectioned-boxes-inner(row, $background-color, space-around);
+    }
   }
 }
 
 .summary-copyright {
+  text-align: center;
   &__title {
     color: $title-text-color;
   }
@@ -26,10 +22,6 @@
     color: $text-grey;
     font-weight: bold;
   }
-}
-
-.contact__title {
-  color: $text-black;
 }
 
 .services {
@@ -63,11 +55,15 @@
 }
 
 .contact {
+  text-align: center;
   &__address {
     color: $text-grey;
     @media (min-width: 1000px) {
       max-width: 140px;
     }
+  }
+  &__title {
+    color: $text-black;
   }
   & a {
     text-decoration: none;
