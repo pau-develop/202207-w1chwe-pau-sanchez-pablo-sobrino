@@ -1,11 +1,7 @@
 .section-media {
   @include sectioned-boxes(100%);
   .section-media__inner {
-    @include sectioned-boxes-inner(
-      column,
-      main-background-color,
-      space-between
-    );
+    @include sectioned-boxes-inner(column, $first-color, space-between);
     @media (min-width: 1000px) {
       @include sectioned-boxes-inner(row, $first-color, space-between);
     }
@@ -46,7 +42,6 @@
     display: flex;
     flex-direction: column;
     color: $first-color;
-    align-items: left;
     height: 25%;
   }
   .section-media__input-button {
