@@ -1,7 +1,39 @@
-.summary-copyright__title {
-  color: $title-text-color;
+.summary-copyright {
+  &__title {
+    color: $title-text-color;
+  }
+  &__summary {
+    color: $text-grey;
+  }
+  &__copyright {
+    color: $text-grey;
+  }
 }
 
 .contact__title {
   color: $text-black;
+}
+
+.services {
+  &__title {
+    color: $text-black;
+  }
+  &__list {
+    color: $text-grey;
+  }
+}
+
+.continents {
+  &__title {
+    color: $text-black;
+  }
+  &__list {
+    color: $text-grey;
+  }
+}
+
+.contact {
+  &__address {
+    color: $text-grey;
+  }
 }
