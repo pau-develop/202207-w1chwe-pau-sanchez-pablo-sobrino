@@ -27,6 +27,7 @@
   border: $border;
   height: $height;
   width: $width;
+  padding: 0 2%;
 }
 
 @mixin submit-button($height, $width, $button-background-color) {
