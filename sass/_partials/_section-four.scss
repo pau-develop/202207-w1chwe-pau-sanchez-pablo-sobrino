@@ -23,12 +23,24 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .services {
+    visibility: hidden;
+  }
+}
+
 .continents {
   &__title {
     color: $text-black;
   }
   &__list {
     color: $text-grey;
+  }
+}
+
+@media (max-width: 1000px) {
+  .continents {
+    visibility: hidden;
   }
 }
 
