@@ -22,7 +22,7 @@
 }
 
 @mixin input-box($border, $box-background-color, $height, $width) {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: $box-background-color;
   border: $border;
   height: $height;
@@ -30,11 +30,12 @@
 }
 
 @mixin submit-button($height, $width, $button-background-color) {
+  font-family: Poppins;
   background-color: $button-background-color;
   color: $background-color;
   font-size: 14px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   width: $width;
   height: $height;
 }
