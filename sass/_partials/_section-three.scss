@@ -1,0 +1,14 @@
+.section-three {
+  @include sectioned-boxes(400px);
+  &__inner {
+    @include sectioned-boxes-inner(column, $background-color, start);
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  &__green-box {
+    background-color: green;
+  }
+  &__red-box {
+    background-color: red;
+  }
+}
