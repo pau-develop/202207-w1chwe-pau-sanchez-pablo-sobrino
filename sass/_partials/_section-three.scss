@@ -58,6 +58,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: 1000px) {
+      span {
+        width: 40%;
+      }
+    }
   }
   &__button {
     @include submit-button(60px, 80%, transparent);
