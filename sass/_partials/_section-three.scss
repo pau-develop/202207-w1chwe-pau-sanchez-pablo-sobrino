@@ -6,9 +6,14 @@
     padding-bottom: 5%;
   }
   &__green-box {
-    background-color: green;
+    background-color: $green-box-background;
+    border: 2px solid $green-box-border;
+    border-radius: 20px;
   }
   &__red-box {
-    background-color: red;
+    background-color: $red-box-background;
+    border: 2px solid $red-box-border;
+    border-radius: 20px;
+    margin-top: 5%;
   }
 }
