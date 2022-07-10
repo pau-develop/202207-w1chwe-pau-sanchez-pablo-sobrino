@@ -24,6 +24,10 @@
     &__show-results {
       width: 60%;
       margin-left: 5%;
+      margin-top: 5%;
+      h2 {
+        margin: 0;
+      }
     }
   }
   &__form {
@@ -67,7 +71,7 @@
   padding: 2%;
 }
 .First-research__image-house > img {
-  width: 50%;
+  width: 60%;
 }
 .star {
   width: 20px;
