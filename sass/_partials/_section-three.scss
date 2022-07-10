@@ -1,5 +1,5 @@
 .section-three {
-  @include sectioned-boxes(800px);
+  @include sectioned-boxes(600px);
   &__inner {
     @include sectioned-boxes-inner(column, $background-color, space-around);
   }
@@ -13,15 +13,20 @@
     background-color: $red-box-background;
     border: 2px solid $red-box-border;
     border-radius: 20px;
-    margin-top: 5%;
     color: $red-box-border;
   }
   &__blue-box {
     background-color: $blue-box-background;
     color: $background-color;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     padding: 10% 0;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button {
+    @include submit-button(60px, 80%);
   }
 }
