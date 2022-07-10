@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   &__button {
     @include submit-button(60px, 80%, transparent);
