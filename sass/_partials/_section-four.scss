@@ -12,6 +12,9 @@
 
 .summary-copyright {
   text-align: center;
+  @media (min-width: 1000px) {
+    text-align: left;
+  }
   &__title {
     color: $title-text-color;
   }
