@@ -1,9 +1,7 @@
 .section-three {
-  @include sectioned-boxes(400px);
+  @include sectioned-boxes(800px);
   &__inner {
-    @include sectioned-boxes-inner(column, $background-color, start);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    @include sectioned-boxes-inner(column, $background-color, space-around);
   }
   &__green-box {
     background-color: $green-box-background;
@@ -17,5 +15,13 @@
     border-radius: 20px;
     margin-top: 5%;
     color: $red-box-border;
+  }
+  &__blue-box {
+    background-color: $blue-box-background;
+    color: $background-color;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10% 0;
+    border-radius: 20px;
   }
 }
