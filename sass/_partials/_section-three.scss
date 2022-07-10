@@ -5,6 +5,7 @@
   }
   &__green-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: $green-box-background;
     border: 2px solid $green-box-border;
@@ -12,7 +13,6 @@
     color: $green-box-border;
     i {
       align-self: start;
-      padding: 4% 3%;
     }
     .fa-x {
       align-self: center;
@@ -20,6 +20,7 @@
   }
   &__red-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: $red-box-background;
     border: 2px solid $red-box-border;
@@ -27,18 +28,17 @@
     color: $red-box-border;
     i {
       align-self: start;
-      padding: 4% 3%;
     }
     .fa-x {
       align-self: center;
     }
   }
   &__blue-box {
+    height: 50%;
     background-color: $blue-box-background;
     color: $background-color;
     font-size: 3rem;
     text-align: center;
-    padding: 10% 0;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
