@@ -9,11 +9,13 @@
     background-color: $green-box-background;
     border: 2px solid $green-box-border;
     border-radius: 20px;
+    color: $green-box-border;
   }
   &__red-box {
     background-color: $red-box-background;
     border: 2px solid $red-box-border;
     border-radius: 20px;
     margin-top: 5%;
+    color: $red-box-border;
   }
 }
