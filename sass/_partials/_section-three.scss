@@ -11,8 +11,15 @@
     border: 2px solid $green-box-border;
     border-radius: 20px;
     color: $green-box-border;
+    p {
+      flex: 8;
+    }
     i {
-      align-self: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      align-self: center;
     }
     .fa-x {
       align-self: center;
@@ -26,8 +33,15 @@
     border: 2px solid $red-box-border;
     border-radius: 20px;
     color: $red-box-border;
+    p {
+      flex: 8;
+    }
     i {
-      align-self: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      align-self: center;
     }
     .fa-x {
       align-self: center;
@@ -44,6 +58,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: 1000px) {
+      span {
+        width: 40%;
+      }
+    }
   }
   &__button {
     @include submit-button(60px, 80%, transparent);
