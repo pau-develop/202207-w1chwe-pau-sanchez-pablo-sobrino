@@ -1,6 +1,3 @@
-@import "../_mixins/_mixins.scss";
-@import "../_colors/_colors.scss";
-
 .section-top {
   @include sectioned-boxes(400px);
   &__inner {
