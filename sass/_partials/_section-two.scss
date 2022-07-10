@@ -62,22 +62,33 @@
   @include input-box(none, $background-color, 50%, 100%);
 }
 .First-research {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  &__location-detail {
+    margin: 0;
+  }
+  &__details {
+    margin: 0;
+  }
+  h3,
+  h4 {
+    color: $blue-box-background;
+    margin: 0;
+  }
+  &__show-on-map {
+    margin: 0;
+  }
+  &__button-booking {
+    @include submit-button(60%, 40%, $background-color);
+    color: $blue-box-background;
+    border: 2px solid $box-grey;
+    margin-top: 5%;
+  }
 }
-.First-research__button-booking {
-  @include submit-button(60%, 40%, $background-color);
-  color: $blue-box-background;
-  border: 2px solid $box-grey;
-  padding: 2%;
-}
-.First-research__image-house > img {
+.First-research .First-research__image-house > img {
   width: 60%;
 }
 .star {
   width: 20px;
-}
-
-h3,
-h4 {
-  color: $blue-box-background;
 }
