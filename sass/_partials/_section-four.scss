@@ -1,0 +1,51 @@
+.summary-copyright {
+  &__title {
+    color: $title-text-color;
+  }
+  &__summary {
+    color: $text-grey;
+  }
+  &__copyright {
+    color: $text-grey;
+  }
+}
+
+.contact__title {
+  color: $text-black;
+}
+
+.services {
+  &__title {
+    color: $text-black;
+  }
+  &__list {
+    color: $text-grey;
+  }
+}
+
+@media (max-width: 1000px) {
+  .services {
+    visibility: hidden;
+  }
+}
+
+.continents {
+  &__title {
+    color: $text-black;
+  }
+  &__list {
+    color: $text-grey;
+  }
+}
+
+@media (max-width: 1000px) {
+  .continents {
+    visibility: hidden;
+  }
+}
+
+.contact {
+  &__address {
+    color: $text-grey;
+  }
+}
