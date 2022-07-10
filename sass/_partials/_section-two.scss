@@ -2,10 +2,29 @@
   @include sectioned-boxes(100%);
   .section-media__inner {
     @include sectioned-boxes-inner(column, $background-color, space-between);
+    @media (min-width: 1000px) {
+      @include sectioned-boxes-inner(row, $background-color, space-between);
+    }
   }
   &__search-box {
     height: 500px;
+    width: 100%;
     background-color: $dark-blue;
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+  @media (min-width: 1000px) {
+    &__search-box {
+      height: 500px;
+      width: 40%;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      margin-top: 5%;
+    }
+    &__show-results {
+      width: 60%;
+      margin-left: 5%;
+    }
   }
   &__form {
     display: flex;
@@ -20,11 +39,10 @@
     flex-direction: column;
     color: $background-color;
     align-items: left;
-    margin: 0 2%;
-    height: 20%;
+    height: 25%;
   }
   .section-media__input-button {
-    @include submit-button(20%, 100%, $pink-button);
+    @include submit-button(12%, 100%, $pink-button);
   }
   &__tittle {
     margin-left: 30px;
@@ -39,14 +57,18 @@
 .section-media__field-to-complete {
   @include input-box(none, $background-color, 50%, 100%);
 }
-
+.First-research {
+  padding: 0;
+}
 .First-research__button-booking {
   @include submit-button(60%, 40%, $background-color);
   color: $blue-box-background;
   border: 2px solid $box-grey;
   padding: 2%;
 }
-
+.First-research__image-house > img {
+  width: 50%;
+}
 .star {
   width: 20px;
 }
