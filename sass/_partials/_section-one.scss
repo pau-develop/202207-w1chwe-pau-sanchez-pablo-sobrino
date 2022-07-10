@@ -13,7 +13,7 @@
       }
     }
     .section-top__submit-button {
-      @include submit-button(20%, 100%);
+      @include submit-button(20%, 100%, $pink-button);
     }
   }
 }
@@ -48,7 +48,7 @@
       }
     }
     .section-top__submit-button {
-      @include submit-button(20%, 20%);
+      @include submit-button(20%, 20%, $pink-button);
     }
   }
 }
