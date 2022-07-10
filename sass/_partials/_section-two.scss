@@ -64,9 +64,16 @@
 .First-research {
   display: flex;
   flex-direction: column;
+
   padding: 0;
   margin: 5% 0;
   border-bottom: 2px solid $box-grey;
+  &__image-house > img {
+    width: 60%;
+  }
+  &__star {
+    width: 20px;
+  }
   &__location-detail {
     margin: 0;
   }
@@ -87,13 +94,25 @@
     border: 2px solid $box-grey;
     margin-top: 5%;
   }
+  &__text-wrap {
+    margin-bottom: 5%;
+  }
 }
 .First-research:last-child {
   border-bottom: none;
 }
-.First-research .First-research__image-house > img {
-  width: 60%;
-}
-.star {
-  width: 20px;
+
+@media (min-width: 1000px) {
+  .First-research {
+    flex-direction: row;
+    &__button-booking {
+      @include submit-button(15%, 50%, $background-color);
+      color: $blue-box-background;
+      border: 2px solid $box-grey;
+      margin-top: 5%;
+    }
+    &__image-house > img {
+      width: 90%;
+    }
+  }
 }
