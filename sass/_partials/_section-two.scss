@@ -39,3 +39,19 @@
 .section-media__field-to-complete {
   @include input-box(none, $background-color, 50%, 100%);
 }
+
+.First-research__button-booking {
+  @include submit-button(60%, 40%, $background-color);
+  color: $blue-box-background;
+  border: 2px solid $box-grey;
+  padding: 2%;
+}
+
+.star {
+  width: 60px;
+}
+
+h3,
+h4 {
+  color: $blue-box-background;
+}
