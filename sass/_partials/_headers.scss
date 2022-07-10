@@ -3,17 +3,17 @@
 .header {
   @include sectioned-boxes(80px);
   .header__inner {
-    @include sectioned-boxes-inner(row, $background-color, space-between);
+    @include sectioned-boxes-inner(row, $first-color, space-between);
     align-items: center;
   }
   .header__h1 {
-    color: $title-text-color;
+    color: $second-color;
     margin: 0;
     font-size: 35px;
     font-weight: 800;
   }
   .fa-solid {
-    color: $title-text-color;
+    color: $second-color;
     align-items: center;
     display: flex;
   }

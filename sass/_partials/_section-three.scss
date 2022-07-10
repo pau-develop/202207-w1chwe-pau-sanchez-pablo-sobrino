@@ -1,16 +1,16 @@
 .section-three {
   @include sectioned-boxes(600px);
   &__inner {
-    @include sectioned-boxes-inner(column, $background-color, space-around);
+    @include sectioned-boxes-inner(column, $first-color, space-around);
   }
   &__green-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $green-box-background;
-    border: 2px solid $green-box-border;
+    background-color: #d7f4eb;
+    border: 2px solid #0cb840;
     border-radius: 20px;
-    color: $green-box-border;
+    color: #0cb840;
     p {
       flex: 8;
     }
@@ -29,10 +29,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $red-box-background;
-    border: 2px solid $red-box-border;
+    background-color: #eec7d9;
+    border: 2px solid #c01643;
     border-radius: 20px;
-    color: $red-box-border;
+    color: #c01643;
     p {
       flex: 8;
     }
@@ -49,8 +49,8 @@
   }
   &__blue-box {
     height: 50%;
-    background-color: $blue-box-background;
-    color: $background-color;
+    background-color: $third-color;
+    color: $first-color;
     font-size: 3rem;
     text-align: center;
     border-radius: 20px;
