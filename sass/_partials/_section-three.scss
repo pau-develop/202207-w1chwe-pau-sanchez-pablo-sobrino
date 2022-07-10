@@ -27,6 +27,7 @@
     align-items: center;
   }
   &__button {
-    @include submit-button(60px, 80%);
+    @include submit-button(60px, 80%, transparent);
+    border: 2px solid white;
   }
 }

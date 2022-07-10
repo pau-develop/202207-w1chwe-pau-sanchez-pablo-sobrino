@@ -23,7 +23,7 @@
     height: 20%;
   }
   .section-media__input-button {
-    @include submit-button(20%, 100%);
+    @include submit-button(20%, 100%, $pink-button);
   }
   &__tittle {
     margin-left: 30px;
@@ -31,7 +31,7 @@
     font-size: medium;
   }
   &__input-button {
-    @include submit-button(50%, 100%);
+    @include submit-button(50%, 100%, $pink-button);
   }
 }
 
